@@ -1,0 +1,67 @@
+{
+"appname":"Pharma",
+
+"search":"Search",
+
+"searcherror":"Please enter Medicine name",
+
+"pharmacies":"Pharmacies",
+
+"categories":"categories",
+
+"Antibiotics":"Antibiotics",
+
+"tuberculosis":"Tuberculosis",
+
+"galanddiseases":"Galand diseases",
+
+"blooddiseases":"Blood diseases",
+
+"Otorhinolaryngology":"torhinolaryngology",
+
+"pressuredisease":"Pressure disease",
+
+"diabetes":"Diabetes",
+
+"immunediseases":"Immune diseases",
+
+"heartvasculardiseses":"Heart and vascular diseses",
+
+"kidneydiseases":"Kidney diseases",
+
+"description":"Description",
+"use":"How to use",
+"cart":"Add to cart",
+"favorite":"Favorites",
+"home":"Home",
+"orders":"Orders",
+"profile":"Profile",
+"history":"History",
+"pending":"Pending",
+"PaymentSumary":"Payment Summary",
+"subtotal":"Subtotal",
+"deliveryfee":"Delivery Fee",
+"Servicefee":"Service Fee",
+"totalamount":"Total Amount",
+"addmore":"Add More",
+"Checkout":"Checkout",
+"personalinfo":"Personal Information",
+"deliveryaddress":"Delivery Address",
+"language":"Language",
+"arabic":"Arabic",
+"english":"English",
+"name":"Name",
+"email":"Email",
+"password":"Password",
+"address":"Address",
+"entername":"please enter your name",
+"enteremail":"please enter your email",
+"enteraddress":"please enter your address","update":"Update"
+
+
+
+
+
+
+
+}

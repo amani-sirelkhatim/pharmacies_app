@@ -1,0 +1,62 @@
+{
+"appname":"فارما",
+
+"search":"ابحث",
+
+"searcerror":"الرجاء ادخال اسم الدواء",
+
+"pharmacies":"الصيدليات",
+
+"categories":"الفئات",
+
+"Antibiotics":"مضادات حيوية",
+
+"tuberculosis":"مرض السل",
+
+"galanddiseases":"امراض الغدد",
+
+"blooddiseases":"امراض الدم",
+
+"Otorhinolaryngology":"انف واذن وحنجرة",
+
+"pressuredisease":"مرض الضغط",
+
+"diabetes":"مرض السكر",
+
+"immunediseases":"امراض المناعة",
+
+"heartvasculardiseses":"امراض القلب والاوعية الدموية",
+
+"kidneydiseases":"امراض الكلى",
+"description":"الوصف",
+"use":"طريقة الاستخدام",
+"cart":"اضافة الى السلة",
+"favorite":"المفضلات",
+"Home":"الرئيسية",
+"orders":"الطلبات",
+"profile":"الحساب",
+
+"history":"السابقة",
+"pending":"الحالية",
+"PaymentSumary":"ملخص الدفع",
+"subtotal":"المجموع الفرعي",
+"deliveryfee":"رسوم التوصيل",
+"Servicefee":"رسوم الخدمة",
+"totalamount":"المبلغ الاجمالي"
+,"addmore":"اضف المزيد",
+"Checkout":"تنفيذ الطلب",
+"personalinfo":"المعلومات الشخصية",
+"deliveryaddress":"عنوان التوصيل",
+"language":"اللغة",
+"arabic":"العربية",
+"english":"الانجليزية",
+"name":"الاسم",
+"email":"البريد الالكتروني",
+"password":"كلمة السر",
+"address":"العنوان",
+"entername":"الرجاء ادخال اسمك",
+"enteremail":"الرجاء ادخال البريد الالكتروني",
+"enteraddress":"الرجاء ادخال العنوان","update":"تعديل"
+
+
+}
