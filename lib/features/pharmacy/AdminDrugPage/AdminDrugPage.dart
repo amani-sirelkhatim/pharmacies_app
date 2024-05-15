@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:pharmacies_app/core/utils/colors.dart';
 import 'package:pharmacies_app/core/utils/styles.dart';
-import 'package:pharmacies_app/features/pharmacy/AdminDrugPage/tabbar.dart';
+import 'package:pharmacies_app/features/pharmacy/AdminDrugPage/widgets/AdminTabBar.dart';
+
 
 class AdminDrugPage extends StatefulWidget {
   const AdminDrugPage({super.key, required this.name, required this.id});
