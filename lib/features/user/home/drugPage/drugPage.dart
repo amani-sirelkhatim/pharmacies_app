@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:gap/gap.dart';
+
 import 'package:pharmacies_app/core/utils/colors.dart';
 import 'package:pharmacies_app/core/utils/styles.dart';
 import 'package:pharmacies_app/features/user/home/drugPage/widgets/imageSlider.dart';
@@ -52,7 +50,7 @@ class _DrugPageState extends State<DrugPage> {
         padding: const EdgeInsets.all(20.0),
         child: Column(
           children: [
-            ImageSlider(),
+            const ImageSlider(),
             Container(
               width: 120,
               decoration: BoxDecoration(
@@ -107,14 +105,14 @@ class _DrugPageState extends State<DrugPage> {
                 ],
               ),
             ),
-            TabButtunBar(),
+            const TabButtunBar(),
           ],
         ),
       ),
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Container(
-            padding: EdgeInsets.all(15),
+            padding: const EdgeInsets.all(15),
             height: 60,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(30),
@@ -124,7 +122,7 @@ class _DrugPageState extends State<DrugPage> {
                 S.of(context).cart,
                 style: getTitleStyle(color: AppColors.white),
               ),
-              Spacer(),
+              const Spacer(),
               Text(
                 '${price * amount}',
                 style: getTitleStyle(color: AppColors.white),

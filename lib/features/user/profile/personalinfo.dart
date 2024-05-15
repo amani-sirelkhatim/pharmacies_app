@@ -1,6 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:gap/gap.dart';
 import 'package:pharmacies_app/core/functions/email_validator.dart';
 import 'package:pharmacies_app/core/utils/colors.dart';
@@ -65,7 +64,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                   return null;
                 },
               ),
-              Gap(40),
+              const Gap(40),
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
                 controller: _emailController,
@@ -92,7 +91,7 @@ class _PersonalInfoState extends State<PersonalInfo> {
                   }
                 },
               ),
-              Gap(20),
+              const Gap(20),
               CustomButton(
                 text: S.of(context).update,
                 bgcolor: AppColors.primary,

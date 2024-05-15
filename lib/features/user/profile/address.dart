@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:pharmacies_app/core/utils/colors.dart';
@@ -56,7 +55,7 @@ class _AddressState extends State<Address> {
                 return null;
               },
             ),
-            Gap(20),
+            const Gap(20),
             CustomButton(
               text: S.of(context).update,
               bgcolor: AppColors.primary,

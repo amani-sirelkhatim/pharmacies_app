@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pharmacies_app/core/utils/colors.dart';
 import 'package:pharmacies_app/core/utils/styles.dart';
-import 'package:intl/intl.dart';
+
 import 'package:pharmacies_app/generated/l10n.dart';
 
 class Header extends StatefulWidget {

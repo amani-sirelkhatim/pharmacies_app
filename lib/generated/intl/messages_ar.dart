@@ -27,19 +27,30 @@ class MessageLookup extends MessageLookupByLibrary {
         "Otorhinolaryngology":
             MessageLookupByLibrary.simpleMessage("انف واذن وحنجرة"),
         "PaymentSumary": MessageLookupByLibrary.simpleMessage("ملخص الدفع"),
+        "Perscription":
+            MessageLookupByLibrary.simpleMessage("هل يحتاج الى روشتة"),
         "Servicefee": MessageLookupByLibrary.simpleMessage("رسوم الخدمة"),
+        "accept": MessageLookupByLibrary.simpleMessage("موافقة"),
+        "adddrug": MessageLookupByLibrary.simpleMessage("دواء جديد"),
         "addmore": MessageLookupByLibrary.simpleMessage("اضف المزيد"),
         "address": MessageLookupByLibrary.simpleMessage("العنوان"),
         "appname": MessageLookupByLibrary.simpleMessage("فارما"),
         "arabic": MessageLookupByLibrary.simpleMessage("العربية"),
+        "backImage": MessageLookupByLibrary.simpleMessage("صورة ظهر الدواء"),
         "blooddiseases": MessageLookupByLibrary.simpleMessage("امراض الدم"),
         "cart": MessageLookupByLibrary.simpleMessage("اضافة الى السلة"),
         "categories": MessageLookupByLibrary.simpleMessage("الفئات"),
+        "decline": MessageLookupByLibrary.simpleMessage("رفض"),
         "deliveryaddress":
             MessageLookupByLibrary.simpleMessage("عنوان التوصيل"),
         "deliveryfee": MessageLookupByLibrary.simpleMessage("رسوم التوصيل"),
         "description": MessageLookupByLibrary.simpleMessage("الوصف"),
+        "descriptionarabic":
+            MessageLookupByLibrary.simpleMessage("الوصف بالعربي"),
+        "descriptionenglish":
+            MessageLookupByLibrary.simpleMessage("الوصف بالانجليزي"),
         "diabetes": MessageLookupByLibrary.simpleMessage("مرض السكر"),
+        "drugname": MessageLookupByLibrary.simpleMessage("اسم الدواء"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
         "english": MessageLookupByLibrary.simpleMessage("الانجليزية"),
         "enteraddress":
@@ -48,27 +59,41 @@ class MessageLookup extends MessageLookupByLibrary {
             "الرجاء ادخال البريد الالكتروني"),
         "entername": MessageLookupByLibrary.simpleMessage("الرجاء ادخال اسمك"),
         "favorite": MessageLookupByLibrary.simpleMessage("المفضلات"),
+        "frontImage":
+            MessageLookupByLibrary.simpleMessage("صورة الدواء من المقدمة"),
         "galanddiseases": MessageLookupByLibrary.simpleMessage("امراض الغدد"),
         "heartvasculardiseses": MessageLookupByLibrary.simpleMessage(
             "امراض القلب والاوعية الدموية"),
         "history": MessageLookupByLibrary.simpleMessage("السابقة"),
+        "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "immunediseases": MessageLookupByLibrary.simpleMessage("امراض المناعة"),
         "kidneydiseases": MessageLookupByLibrary.simpleMessage("امراض الكلى"),
         "language": MessageLookupByLibrary.simpleMessage("اللغة"),
         "name": MessageLookupByLibrary.simpleMessage("الاسم"),
+        "next": MessageLookupByLibrary.simpleMessage("التالي"),
+        "order": MessageLookupByLibrary.simpleMessage("الطلب"),
         "orders": MessageLookupByLibrary.simpleMessage("الطلبات"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة السر"),
         "pending": MessageLookupByLibrary.simpleMessage("الحالية"),
         "personalinfo":
             MessageLookupByLibrary.simpleMessage("المعلومات الشخصية"),
         "pharmacies": MessageLookupByLibrary.simpleMessage("الصيدليات"),
+        "pharmacyname": MessageLookupByLibrary.simpleMessage("اسم الصيدلية"),
+        "phone": MessageLookupByLibrary.simpleMessage("رقم الهاتف"),
         "pressuredisease": MessageLookupByLibrary.simpleMessage("مرض الضغط"),
+        "price": MessageLookupByLibrary.simpleMessage("السعر"),
         "profile": MessageLookupByLibrary.simpleMessage("الحساب"),
+        "quantity": MessageLookupByLibrary.simpleMessage("الكمية"),
+        "save": MessageLookupByLibrary.simpleMessage("حفظ"),
         "search": MessageLookupByLibrary.simpleMessage("ابحث"),
         "subtotal": MessageLookupByLibrary.simpleMessage("المجموع الفرعي"),
         "totalamount": MessageLookupByLibrary.simpleMessage("المبلغ الاجمالي"),
         "tuberculosis": MessageLookupByLibrary.simpleMessage("مرض السل"),
         "update": MessageLookupByLibrary.simpleMessage("تعديل"),
-        "use": MessageLookupByLibrary.simpleMessage("طريقة الاستخدام")
+        "use": MessageLookupByLibrary.simpleMessage("طريقة الاستخدام"),
+        "usearabic":
+            MessageLookupByLibrary.simpleMessage("كيفية الاستخدام بالعربي"),
+        "useenglish":
+            MessageLookupByLibrary.simpleMessage("كيفية الاستخدام بالانجليزي")
       };
 }

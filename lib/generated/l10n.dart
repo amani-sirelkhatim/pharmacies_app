@@ -489,6 +489,186 @@ class S {
       args: [],
     );
   }
+
+  /// `New Medicine `
+  String get adddrug {
+    return Intl.message(
+      'New Medicine ',
+      name: 'adddrug',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Medicine Name`
+  String get drugname {
+    return Intl.message(
+      'Medicine Name',
+      name: 'drugname',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Medicine Front Image`
+  String get frontImage {
+    return Intl.message(
+      'Medicine Front Image',
+      name: 'frontImage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Medicine Rear Image`
+  String get backImage {
+    return Intl.message(
+      'Medicine Rear Image',
+      name: 'backImage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Price`
+  String get price {
+    return Intl.message(
+      'Price',
+      name: 'price',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Is a Perscription Needed`
+  String get Perscription {
+    return Intl.message(
+      'Is a Perscription Needed',
+      name: 'Perscription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Description In Arabic`
+  String get descriptionarabic {
+    return Intl.message(
+      'Description In Arabic',
+      name: 'descriptionarabic',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Description In English`
+  String get descriptionenglish {
+    return Intl.message(
+      'Description In English',
+      name: 'descriptionenglish',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `How To Use In Arabic`
+  String get usearabic {
+    return Intl.message(
+      'How To Use In Arabic',
+      name: 'usearabic',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `How To Use In English`
+  String get useenglish {
+    return Intl.message(
+      'How To Use In English',
+      name: 'useenglish',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Next`
+  String get next {
+    return Intl.message(
+      'Next',
+      name: 'next',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save`
+  String get save {
+    return Intl.message(
+      'Save',
+      name: 'save',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Quantatity`
+  String get quantity {
+    return Intl.message(
+      'Quantatity',
+      name: 'quantity',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Order`
+  String get order {
+    return Intl.message(
+      'Order',
+      name: 'order',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Accept`
+  String get accept {
+    return Intl.message(
+      'Accept',
+      name: 'accept',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Decline`
+  String get decline {
+    return Intl.message(
+      'Decline',
+      name: 'decline',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pharmacy Name`
+  String get pharmacyname {
+    return Intl.message(
+      'Pharmacy Name',
+      name: 'pharmacyname',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone Number`
+  String get phone {
+    return Intl.message(
+      'Phone Number',
+      name: 'phone',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

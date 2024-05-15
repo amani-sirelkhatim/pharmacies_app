@@ -1,34 +1,19 @@
 {
 "appname":"Pharma",
-
 "search":"Search",
-
 "searcherror":"Please enter Medicine name",
-
 "pharmacies":"Pharmacies",
-
 "categories":"categories",
-
 "Antibiotics":"Antibiotics",
-
 "tuberculosis":"Tuberculosis",
-
 "galanddiseases":"Galand diseases",
-
 "blooddiseases":"Blood diseases",
-
 "Otorhinolaryngology":"torhinolaryngology",
-
 "pressuredisease":"Pressure disease",
-
 "diabetes":"Diabetes",
-
 "immunediseases":"Immune diseases",
-
 "heartvasculardiseses":"Heart and vascular diseses",
-
 "kidneydiseases":"Kidney diseases",
-
 "description":"Description",
 "use":"How to use",
 "cart":"Add to cart",
@@ -56,7 +41,28 @@
 "address":"Address",
 "entername":"please enter your name",
 "enteremail":"please enter your email",
-"enteraddress":"please enter your address","update":"Update"
+"enteraddress":"please enter your address",
+"update":"Update",
+"adddrug":"New Medicine ",
+"drugname":"Medicine Name",
+"frontImage":"Medicine Front Image",
+"backImage":"Medicine Rear Image",
+"price":"Price",
+"Perscription":"Is a Perscription Needed",
+"descriptionarabic":"Description In Arabic",
+"descriptionenglish":"Description In English",
+"usearabic":"How To Use In Arabic",
+"useenglish":"How To Use In English",
+"next":"Next",
+"save":"Save",
+"quantity":"Quantatity",
+"order":"Order",
+"accept":"Accept",
+"decline":"Decline",
+"pharmacyname":"Pharmacy Name","phone":"Phone Number"
+
+
+
 
 
 

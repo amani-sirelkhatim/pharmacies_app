@@ -1,12 +1,11 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:pharmacies_app/core/functions/route.dart';
 import 'package:pharmacies_app/core/utils/colors.dart';
 import 'package:pharmacies_app/core/utils/styles.dart';
 import 'package:pharmacies_app/features/user/favorites/widgets/favoriteCard.dart';
 import 'package:pharmacies_app/features/user/home/drugPage/drugPage.dart';
-import 'package:pharmacies_app/features/user/home/widgets/drugCard.dart';
+
 import 'package:pharmacies_app/generated/l10n.dart';
 
 class Favorite extends StatefulWidget {
@@ -37,7 +36,7 @@ class _FavoriteState extends State<Favorite> {
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: GridView.builder(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2, // 2 columns
                     crossAxisSpacing: 20.0,
                     mainAxisSpacing: 20.0,
@@ -46,9 +45,9 @@ class _FavoriteState extends State<Favorite> {
                   itemBuilder: (BuildContext context, int index) {
                     return GestureDetector(
                         onTap: () {
-                          push(context, DrugPage());
+                          push(context, const DrugPage());
                         },
-                        child: FavoriteCard());
+                        child: const FavoriteCard());
                   },
                 ),
               ),

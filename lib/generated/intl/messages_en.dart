@@ -28,19 +28,31 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("torhinolaryngology"),
         "PaymentSumary":
             MessageLookupByLibrary.simpleMessage("Payment Summary"),
+        "Perscription":
+            MessageLookupByLibrary.simpleMessage("Is a Perscription Needed"),
         "Servicefee": MessageLookupByLibrary.simpleMessage("Service Fee"),
+        "accept": MessageLookupByLibrary.simpleMessage("Accept"),
+        "adddrug": MessageLookupByLibrary.simpleMessage("New Medicine "),
         "addmore": MessageLookupByLibrary.simpleMessage("Add More"),
         "address": MessageLookupByLibrary.simpleMessage("Address"),
         "appname": MessageLookupByLibrary.simpleMessage("Pharma"),
         "arabic": MessageLookupByLibrary.simpleMessage("Arabic"),
+        "backImage":
+            MessageLookupByLibrary.simpleMessage("Medicine Rear Image"),
         "blooddiseases": MessageLookupByLibrary.simpleMessage("Blood diseases"),
         "cart": MessageLookupByLibrary.simpleMessage("Add to cart"),
         "categories": MessageLookupByLibrary.simpleMessage("categories"),
+        "decline": MessageLookupByLibrary.simpleMessage("Decline"),
         "deliveryaddress":
             MessageLookupByLibrary.simpleMessage("Delivery Address"),
         "deliveryfee": MessageLookupByLibrary.simpleMessage("Delivery Fee"),
         "description": MessageLookupByLibrary.simpleMessage("Description"),
+        "descriptionarabic":
+            MessageLookupByLibrary.simpleMessage("Description In Arabic"),
+        "descriptionenglish":
+            MessageLookupByLibrary.simpleMessage("Description In English"),
         "diabetes": MessageLookupByLibrary.simpleMessage("Diabetes"),
+        "drugname": MessageLookupByLibrary.simpleMessage("Medicine Name"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "english": MessageLookupByLibrary.simpleMessage("English"),
         "enteraddress":
@@ -50,6 +62,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "entername":
             MessageLookupByLibrary.simpleMessage("please enter your name"),
         "favorite": MessageLookupByLibrary.simpleMessage("Favorites"),
+        "frontImage":
+            MessageLookupByLibrary.simpleMessage("Medicine Front Image"),
         "galanddiseases":
             MessageLookupByLibrary.simpleMessage("Galand diseases"),
         "heartvasculardiseses":
@@ -62,15 +76,22 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Kidney diseases"),
         "language": MessageLookupByLibrary.simpleMessage("Language"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
+        "next": MessageLookupByLibrary.simpleMessage("Next"),
+        "order": MessageLookupByLibrary.simpleMessage("Order"),
         "orders": MessageLookupByLibrary.simpleMessage("Orders"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "pending": MessageLookupByLibrary.simpleMessage("Pending"),
         "personalinfo":
             MessageLookupByLibrary.simpleMessage("Personal Information"),
         "pharmacies": MessageLookupByLibrary.simpleMessage("Pharmacies"),
+        "pharmacyname": MessageLookupByLibrary.simpleMessage("Pharmacy Name"),
+        "phone": MessageLookupByLibrary.simpleMessage("Phone Number"),
         "pressuredisease":
             MessageLookupByLibrary.simpleMessage("Pressure disease"),
+        "price": MessageLookupByLibrary.simpleMessage("Price"),
         "profile": MessageLookupByLibrary.simpleMessage("Profile"),
+        "quantity": MessageLookupByLibrary.simpleMessage("Quantatity"),
+        "save": MessageLookupByLibrary.simpleMessage("Save"),
         "search": MessageLookupByLibrary.simpleMessage("Search"),
         "searcherror":
             MessageLookupByLibrary.simpleMessage("Please enter Medicine name"),
@@ -78,6 +99,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "totalamount": MessageLookupByLibrary.simpleMessage("Total Amount"),
         "tuberculosis": MessageLookupByLibrary.simpleMessage("Tuberculosis"),
         "update": MessageLookupByLibrary.simpleMessage("Update"),
-        "use": MessageLookupByLibrary.simpleMessage("How to use")
+        "use": MessageLookupByLibrary.simpleMessage("How to use"),
+        "usearabic":
+            MessageLookupByLibrary.simpleMessage("How To Use In Arabic"),
+        "useenglish":
+            MessageLookupByLibrary.simpleMessage("How To Use In English")
       };
 }

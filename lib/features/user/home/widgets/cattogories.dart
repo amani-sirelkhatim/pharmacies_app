@@ -1,15 +1,15 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:gap/gap.dart';
+
 import 'package:pharmacies_app/core/functions/route.dart';
 import 'package:pharmacies_app/core/utils/colors.dart';
 import 'package:pharmacies_app/core/utils/styles.dart';
 import 'package:pharmacies_app/features/user/home/catigoryPage.dart';
 import 'package:pharmacies_app/features/user/home/widgets/category.dart';
 import 'package:pharmacies_app/generated/l10n.dart';
-import 'package:intl/intl.dart';
+
 
 class Cattegories extends StatefulWidget {
   const Cattegories({super.key});

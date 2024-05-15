@@ -1,7 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:pharmacies_app/core/utils/colors.dart';
+
 import 'package:pharmacies_app/core/utils/styles.dart';
 
 class DrugCard extends StatefulWidget {
@@ -34,7 +32,7 @@ class _DrugCardState extends State<DrugCard> {
           children: [
             Stack(children: [
               ClipRRect(
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                       topRight: Radius.circular(20),
                       topLeft: Radius.circular(20)),
                   child: Image.asset('assets/images/antibiotics.jpg')),
@@ -51,7 +49,7 @@ class _DrugCardState extends State<DrugCard> {
               'name',
               style: getBodyStyle(),
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.end,
               // crossAxisAlignment: CrossAxisAlignment.end,
               children: [
