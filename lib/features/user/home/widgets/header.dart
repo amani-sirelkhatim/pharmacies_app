@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:pharmacies_app/core/functions/route.dart';
 import 'package:pharmacies_app/core/utils/colors.dart';
 import 'package:pharmacies_app/core/utils/styles.dart';
+import 'package:pharmacies_app/features/user/home/search.dart';
 
 import 'package:pharmacies_app/generated/l10n.dart';
 
@@ -12,6 +14,8 @@ class Header extends StatefulWidget {
 }
 
 class _HeaderState extends State<Header> {
+  final TextEditingController _drugController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -30,6 +34,7 @@ class _HeaderState extends State<Header> {
             ],
           ),
           TextFormField(
+            controller: _drugController,
             validator: (value) {
               if (value!.isEmpty) {
                 return '';
@@ -37,7 +42,9 @@ class _HeaderState extends State<Header> {
                 return null;
               }
             },
-            onEditingComplete: () {},
+            onEditingComplete: () {
+              push(context, Search(drug: _drugController.text));
+            },
             // controller: companycon,
             decoration: InputDecoration(
               prefixIcon: Icon(

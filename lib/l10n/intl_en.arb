@@ -1,5 +1,20 @@
 {
-"appname":"Pharma",
+"join":"Join us as a ",
+"patient":"Patient",
+"pharmacy":"Pharmacy",
+"getin":"Lets Get You In",
+"welcome":"Welcome Back",
+"login":"Login",
+"regester":"Register Now",
+"info":"Enter Your Information Below",
+"signup":"Sign Up",
+"already":"Already have an account?",
+"dont":"You dont have an account ",
+"enterphone":"please enter your phone number",
+"pharname":"Pharmacy Name",
+"enterpharname":"please enter the pharmacy name",
+"wrongemail":"email format is incorrect",
+"appname":"MediQuick",
 "search":"Search",
 "searcherror":"Please enter Medicine name",
 "pharmacies":"Pharmacies",
@@ -42,6 +57,7 @@
 "entername":"please enter your name",
 "enteremail":"please enter your email",
 "enteraddress":"please enter your address",
+"enterpassword":"please enter your password",
 "update":"Update",
 "adddrug":"New Medicine ",
 "drugname":"Medicine Name",
@@ -59,11 +75,52 @@
 "order":"Order",
 "accept":"Accept",
 "decline":"Decline",
-"pharmacyname":"Pharmacy Name","phone":"Phone Number"
-
-
-
-
+"pharmacyname":"Pharmacy Name",
+"phone":"Phone Number",
+"main":"Main Information"
+,"yes":"Yes",
+"no":"No","delete":"Delete",
+"uploadperscription":"please uploaud your perscription image"
+,"status":"Order Status",
+"permission":"Please uploud the pharmacy health permission",
+"request":"Send Request",
+"Aproval":"Already got the approval email??"
+,"sendrequest":"Request To Join As A Pharmacy",
+"setaddress":"Set Your Address",
+"currentlocation":"Set Current Location",
+"noproducts":"There are no products yet in this category",
+"nosaved":"There are no saved products yet",
+"noorders":"There are no confirmed orders yet",
+"placeorder":"Your order has been placed Successfuly",
+"ok":"Ok"
+,"addproduct":"Product Added Successfuly to your cart",
+"pendingcart":"confirm your pending cart first",
+"viewcart":"View Cart",
+"camera":"Camera",
+"gallery":"Gallery"
+,"photosource":"Select Photo Source",
+"deleteorder":"Delete Order"
+,"deletewarnning":"Are you sure you want to withdrow your order After it has been confirmed??!",
+"searchresults":"Search Results",
+"nosearch":"No search results found",
+"pendingorder":"Pending",
+"delivery":"Delivery is in progress",
+"done":"Delivered",
+"declined":"Declined",
+"reasons":"please check your email \n to know why your order has been declined",
+"deleteproduct":"Are you sure you want to delete this product??!",
+"updated":"Updated Successfuly",
+"acceptorder": "order has been accepted Successfuly",
+"declineorder":"order has been declined Successfuly",
+"declinereason":"why do you want to decline this order???",
+"deliverycomplications":"Difficulties in the delivery process",
+"perscriptionisincorect":"The perscription is incorrect",
+"drugnotavailable":"The product is unavailable",
+"addresserror":"please set your address for delivery first!!!",
+"deletecart":"are you sure you want to remove this cart??",
+"noitems":"you removed all of the carts items please add new items or delete the cart it self!!"
+,"continuesignup":"Proceed to Signup","emailcheck":"check your email because you havent been accepted yet!!!"
+,"emailwait":"you have already sent your request before... please wait for the responde email!!","fullpage":"Full Page View"
 
 
 

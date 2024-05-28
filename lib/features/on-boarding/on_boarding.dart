@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pharmacies_app/core/functions/route.dart';
+import 'package:pharmacies_app/core/storage/local.dart';
 import 'package:pharmacies_app/core/utils/colors.dart';
 import 'package:pharmacies_app/core/utils/styles.dart';
 import 'package:pharmacies_app/core/widgets/custom_button.dart';
@@ -31,10 +32,13 @@ class _onBoardingState extends State<onBoarding> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         actions: [
           TextButton(
               onPressed: () {
+                LocaleService.cacheData(LocaleService.Is_opened, true);
+
                 pushWithReplacment(context, welcome());
               },
               child: Text(
@@ -94,6 +98,8 @@ class _onBoardingState extends State<onBoarding> {
                       bgcolor: AppColors.primary,
                       width: 100,
                       onTap: () {
+                        LocaleService.cacheData(LocaleService.Is_opened, true);
+
                         pushWithReplacment(context, welcome());
                       },
                       text: 'Lets Start',

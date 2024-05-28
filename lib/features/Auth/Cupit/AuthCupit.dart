@@ -11,7 +11,6 @@ class AuthCubit extends Cubit<AuthStates> {
   registerPharmacy({
     required String name,
     required String email,
-    required String address,
     required String password,
     required String phone,
   }) async {
@@ -33,7 +32,7 @@ class AuthCubit extends Cubit<AuthStates> {
         'image': null,
         'email': email,
         'phone': phone,
-        'address': address,
+        'address': null,
         'language': 'English',
       }, SetOptions(merge: true));
       emit(RegisterSuccessState());
@@ -52,7 +51,6 @@ class AuthCubit extends Cubit<AuthStates> {
   regestirCustomer({
     required String name,
     required String email,
-    required String address,
     required String password,
     required String phone,
   }) async {
@@ -76,8 +74,8 @@ class AuthCubit extends Cubit<AuthStates> {
         'name': name,
         'email': email,
         'phone': phone,
-        'address': address,
-        'language': null
+        'address': null,
+        'language': 'English',
       }, SetOptions(merge: true));
 
       emit(RegisterSuccessState());

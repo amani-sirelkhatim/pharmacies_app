@@ -6,10 +6,12 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:pharmacies_app/core/functions/route.dart';
 import 'package:pharmacies_app/core/utils/colors.dart';
 import 'package:pharmacies_app/core/utils/styles.dart';
 import 'package:pharmacies_app/core/widgets/custom_button.dart';
 import 'package:pharmacies_app/core/widgets/dialog.dart';
+import 'package:pharmacies_app/core/widgets/map.dart';
 import 'package:pharmacies_app/generated/l10n.dart';
 
 class PharmacyProfile extends StatefulWidget {
@@ -49,8 +51,8 @@ class _PharmacyProfileState extends State<PharmacyProfile> {
         }, SetOptions(merge: true));
         showSentAlertDialog(context,
             title: 'done',
-            ok: 'ok',
-            alert: 'Updated Successfuly',
+            ok:S.of(context).ok,
+            alert: S.of(context).updated,
             Subtiltle: '', onTap: () {
           Navigator.pop(context);
         });
@@ -64,8 +66,8 @@ class _PharmacyProfileState extends State<PharmacyProfile> {
         }, SetOptions(merge: true));
         showSentAlertDialog(context,
             title: 'done',
-            ok: 'ok',
-            alert: 'Updated Successfuly',
+            ok: S.of(context).ok,
+            alert: S.of(context).updated,
             Subtiltle: '', onTap: () {
           Navigator.pop(context);
         });
@@ -74,16 +76,17 @@ class _PharmacyProfileState extends State<PharmacyProfile> {
       }
     } else if (type == 3) {
       try {
-        FirebaseFirestore.instance.collection('Pharmacy').doc(user?.uid).set({
-          'address': address,
-        }, SetOptions(merge: true));
-        showSentAlertDialog(context,
-            title: 'done',
-            ok: 'ok',
-            alert: 'Updated Successfuly',
-            Subtiltle: '', onTap: () {
-          Navigator.pop(context);
-        });
+        push(context, MapTest(id: user!.uid, type: 2));
+        // FirebaseFirestore.instance.collection('Pharmacy').doc(user?.uid).set({
+        //   'address': address,
+        // }, SetOptions(merge: true));
+        // showSentAlertDialog(context,
+        //     title: 'done',
+        //     ok: 'ok',
+        //     alert: 'Updated Successfuly',
+        //     Subtiltle: '', onTap: () {
+        //   Navigator.pop(context);
+        // });
       } catch (e) {
         showErrorDialog(context, e.toString());
       }
@@ -94,8 +97,8 @@ class _PharmacyProfileState extends State<PharmacyProfile> {
         }, SetOptions(merge: true));
         showSentAlertDialog(context,
             title: 'done',
-            ok: 'ok',
-            alert: 'Updated Successfuly',
+            ok: S.of(context).ok,
+            alert: S.of(context).updated,
             Subtiltle: '', onTap: () {
           Navigator.pop(context);
         });
@@ -406,6 +409,8 @@ class _PharmacyProfileState extends State<PharmacyProfile> {
                                       ),
                                     if (type == 3)
                                       TextFormField(
+                                        maxLines: 3,
+                                        enabled: false,
                                         controller: _addressController,
                                         style:
                                             TextStyle(color: AppColors.black),
@@ -558,8 +563,11 @@ class _PharmacyProfileState extends State<PharmacyProfile> {
                                         color: AppColors.primary,
                                       ),
                                       const Gap(10),
-                                      Text(userData['name'],
-                                          style: getBodyStyle()),
+                                      Expanded(
+                                        flex: 2,
+                                        child: Text(userData['name'],
+                                            style: getBodyStyle()),
+                                      ),
                                       const Spacer(),
                                       IconButton(
                                           onPressed: () {
@@ -579,8 +587,11 @@ class _PharmacyProfileState extends State<PharmacyProfile> {
                                         color: AppColors.primary,
                                       ),
                                       const Gap(10),
-                                      Text(userData['email'],
-                                          style: getBodyStyle()),
+                                      Expanded(
+                                        flex: 2,
+                                        child: Text(userData['email'],
+                                            style: getBodyStyle()),
+                                      ),
                                       const Spacer(),
                                       IconButton(
                                           onPressed: () {
@@ -600,8 +611,11 @@ class _PharmacyProfileState extends State<PharmacyProfile> {
                                         color: AppColors.primary,
                                       ),
                                       const Gap(10),
-                                      Text(userData['phone'],
-                                          style: getBodyStyle()),
+                                      Expanded(
+                                        flex: 2,
+                                        child: Text(userData['phone'],
+                                            style: getBodyStyle()),
+                                      ),
                                       const Spacer(),
                                       IconButton(
                                           onPressed: () {
@@ -621,8 +635,13 @@ class _PharmacyProfileState extends State<PharmacyProfile> {
                                         color: AppColors.primary,
                                       ),
                                       const Gap(10),
-                                      Text(userData['address'],
-                                          style: getBodyStyle()),
+                                      Expanded(
+                                        flex: 2,
+                                        child: Text(
+                                            maxLines: 3,
+                                            userData['address'],
+                                            style: getBodyStyle()),
+                                      ),
                                       const Spacer(),
                                       IconButton(
                                           onPressed: () {
@@ -642,11 +661,14 @@ class _PharmacyProfileState extends State<PharmacyProfile> {
                                         color: AppColors.primary,
                                       ),
                                       const Gap(10),
-                                      Text(
-                                          userData['language'] == 'Arabic'
-                                              ? S.of(context).arabic
-                                              : S.of(context).english,
-                                          style: getBodyStyle()),
+                                      Expanded(
+                                        flex: 2,
+                                        child: Text(
+                                            userData['language'] == 'Arabic'
+                                                ? S.of(context).arabic
+                                                : S.of(context).english,
+                                            style: getBodyStyle()),
+                                      ),
                                       const Spacer(),
                                       IconButton(
                                           onPressed: () {

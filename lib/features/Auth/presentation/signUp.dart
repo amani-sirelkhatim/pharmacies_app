@@ -12,6 +12,7 @@ import 'package:pharmacies_app/features/Auth/Cupit/AuthStates.dart';
 import 'package:pharmacies_app/features/Auth/presentation/login.dart';
 import 'package:pharmacies_app/features/pharmacy/pharmacyNav.dart';
 import 'package:pharmacies_app/features/user/PatientNav.dart';
+import 'package:pharmacies_app/generated/l10n.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({super.key, required this.type});
@@ -59,7 +60,7 @@ class _SignUpState extends State<SignUp> {
                 children: [
                   Gap(100),
                   Text(
-                    'Register Now !',
+                    S.of(context).regester,
                     style: getTitleStyle(
                         color: AppColors.black.withOpacity(.7),
                         fontWeight: FontWeight.bold,
@@ -67,7 +68,7 @@ class _SignUpState extends State<SignUp> {
                   ),
                   const Gap(10),
                   Text(
-                    'Enter your inormation below',
+                    S.of(context).info,
                     style: getBodyStyle(
                       color: AppColors.grey,
                       fontWeight: FontWeight.bold,
@@ -82,10 +83,10 @@ class _SignUpState extends State<SignUp> {
                         borderRadius: BorderRadius.circular(25),
                       ),
                       label: widget.type == 0
-                          ? Text('Full Name')
-                          : Text('Pharmacy Name'),
+                          ? Text(S.of(context).name)
+                          : Text(S.of(context).pharname),
                       labelStyle: getBodyStyle(),
-                      hintText: 'Enter the name',
+                      hintText: S.of(context).entername,
                       prefixIcon: Icon(
                         widget.type == 0
                             ? Icons.person_2_outlined
@@ -96,7 +97,7 @@ class _SignUpState extends State<SignUp> {
                     textInputAction: TextInputAction.next,
                     validator: (value) {
                       if (value!.isEmpty) {
-                        return 'Please enter your name';
+                        return S.of(context).entername;
                       } else {
                         return null;
                       }
@@ -110,9 +111,9 @@ class _SignUpState extends State<SignUp> {
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(25),
                       ),
-                      label: Text('Email'),
+                      label: Text(S.of(context).email),
                       labelStyle: getBodyStyle(),
-                      hintText: 'Enter Your Email',
+                      hintText: S.of(context).enteremail,
                       prefixIcon: Icon(
                         Icons.email_outlined,
                         color: AppColors.primary,
@@ -121,39 +122,39 @@ class _SignUpState extends State<SignUp> {
                     textInputAction: TextInputAction.next,
                     validator: (value) {
                       if (value!.isEmpty) {
-                        return 'Please enter your email';
+                        return S.of(context).enteremail;
                       } else if (!emailValidate(value)) {
-                        return 'the email is wrong!!';
+                        return S.of(context).wrongemail;
                       } else {
                         return null;
                       }
                     },
                   ),
                   Gap(10),
-                  TextFormField(
-                    keyboardType: TextInputType.name,
-                    controller: _addressController,
-                    decoration: InputDecoration(
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(25),
-                      ),
-                      label: Text('Address'),
-                      labelStyle: getBodyStyle(),
-                      hintText: 'Enter Your Address',
-                      prefixIcon: Icon(
-                        Icons.location_pin,
-                        color: AppColors.primary,
-                      ),
-                    ),
-                    textInputAction: TextInputAction.next,
-                    validator: (value) {
-                      if (value!.isEmpty) {
-                        return 'Please enter your address';
-                      } else {
-                        return null;
-                      }
-                    },
-                  ),
+                  // TextFormField(
+                  //   keyboardType: TextInputType.name,
+                  //   controller: _addressController,
+                  //   decoration: InputDecoration(
+                  //     border: OutlineInputBorder(
+                  //       borderRadius: BorderRadius.circular(25),
+                  //     ),
+                  //     label: Text(S.of(context).address),
+                  //     labelStyle: getBodyStyle(),
+                  //     hintText: S.of(context).enteraddress,
+                  //     prefixIcon: Icon(
+                  //       Icons.location_pin,
+                  //       color: AppColors.primary,
+                  //     ),
+                  //   ),
+                  //   textInputAction: TextInputAction.next,
+                  //   validator: (value) {
+                  //     if (value!.isEmpty) {
+                  //       return S.of(context).enteraddress;
+                  //     } else {
+                  //       return null;
+                  //     }
+                  //   },
+                  // ),
                   Gap(10),
                   TextFormField(
                     keyboardType: TextInputType.number,
@@ -162,9 +163,9 @@ class _SignUpState extends State<SignUp> {
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(25),
                       ),
-                      label: Text('Phone'),
+                      label: Text(S.of(context).phone),
                       labelStyle: getBodyStyle(),
-                      hintText: 'Enter Your phone',
+                      hintText: S.of(context).enterphone,
                       prefixIcon: Icon(
                         Icons.phone,
                         color: AppColors.primary,
@@ -173,7 +174,7 @@ class _SignUpState extends State<SignUp> {
                     textInputAction: TextInputAction.next,
                     validator: (value) {
                       if (value!.isEmpty) {
-                        return 'Please enter your address';
+                        return S.of(context).enterphone;
                       } else {
                         return null;
                       }
@@ -190,7 +191,7 @@ class _SignUpState extends State<SignUp> {
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(25),
                       ),
-                      label: Text('Password'),
+                      label: Text(S.of(context).password),
                       labelStyle: getBodyStyle(),
                       hintText: '********',
                       suffixIcon: IconButton(
@@ -209,7 +210,7 @@ class _SignUpState extends State<SignUp> {
                       ),
                     ),
                     validator: (value) {
-                      if (value!.isEmpty) return 'please enter your password';
+                      if (value!.isEmpty) return S.of(context).enterpassword;
                       return null;
                     },
                   ),
@@ -225,21 +226,19 @@ class _SignUpState extends State<SignUp> {
                                 context.read<AuthCubit>().regestirCustomer(
                                     name: _nameController.text,
                                     email: _emailController.text,
-                                    address: _addressController.text,
                                     password: _passwordController.text,
                                     phone: _PhoneController.text);
                               } else {
                                 context.read<AuthCubit>().registerPharmacy(
                                     name: _nameController.text,
                                     email: _emailController.text,
-                                    address: _addressController.text,
                                     password: _passwordController.text,
                                     phone: _PhoneController.text);
                               }
                             }
                           },
                           width: 300,
-                          text: 'Sign Up',
+                          text: S.of(context).signup,
                           bgcolor: AppColors.primary.withOpacity(.7)),
                     ],
                   ),
@@ -254,7 +253,7 @@ class _SignUpState extends State<SignUp> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Already have an account?',
+              S.of(context).already,
               style: getSmallStyle(color: AppColors.grey),
             ),
             TextButton(
@@ -262,7 +261,7 @@ class _SignUpState extends State<SignUp> {
                   pushWithReplacment(context, Login(type: widget.type));
                 },
                 child: Text(
-                  'Login now',
+                  S.of(context).login,
                   style: getSmallStyle(color: AppColors.primary),
                 ))
           ],

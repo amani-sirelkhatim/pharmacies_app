@@ -6,6 +6,7 @@ import 'package:pharmacies_app/core/utils/colors.dart';
 import 'package:pharmacies_app/core/utils/styles.dart';
 import 'package:pharmacies_app/core/widgets/custom_button.dart';
 import 'package:pharmacies_app/features/Auth/presentation/login.dart';
+import 'package:pharmacies_app/generated/l10n.dart';
 
 class welcome extends StatelessWidget {
   const welcome({super.key});
@@ -13,6 +14,7 @@ class welcome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+           resizeToAvoidBottomInset: false,
       backgroundColor: AppColors.white,
       body: Padding(
         padding: const EdgeInsets.all(0.0),
@@ -39,7 +41,7 @@ class welcome extends StatelessWidget {
                 child: Column(
                   children: [
                     Gap(60),
-                    Text('Join us as a',
+                    Text(S.of(context).join,
                         style: getTitleStyle(
                             color: AppColors.white, fontSize: 40)),
                     Gap(60),
@@ -52,7 +54,7 @@ class welcome extends StatelessWidget {
                             ));
                       },
                       width: 250,
-                      text: 'Patient',
+                      text: S.of(context).patient,
                       bgcolor: AppColors.white,
                       style: getTitleStyle(color: AppColors.primary),
                     ),
@@ -66,7 +68,7 @@ class welcome extends StatelessWidget {
                             ));
                       },
                       width: 250,
-                      text: 'Pharmacy',
+                      text: S.of(context).pharmacy,
                       bgcolor: AppColors.white,
                       style: getTitleStyle(color: AppColors.primary),
                     )

@@ -25,7 +25,7 @@ class HowToUse extends StatefulWidget {
       required this.desEnglish,
       required this.cat});
   final String name;
-  final String price;
+  final int? price;
   final String image1;
   final String image2;
   final bool needed;
@@ -137,7 +137,7 @@ class _HowToUseState extends State<HowToUse> {
               alert: 'Product Added Successfuly',
               Subtiltle: '', onTap: () {
             Navigator.pop(context);
-            push(context, PharmacyNav());
+            pushWithReplacment(context, PharmacyNav());
           });
         } else if (state is AddDrugErrorState) {
           showErrorDialog(context, state.error);
@@ -262,6 +262,7 @@ class _HowToUseState extends State<HowToUse> {
               onTap: () {
                 if (howArabic.isNotEmpty && howEnglish.isNotEmpty) {
                   context.read<AddDrugCubit>().AddDrug(
+                      pharmacyname: user!.displayName.toString(),
                       pharmacyid: user!.uid,
                       cat: widget.cat,
                       name: widget.name,

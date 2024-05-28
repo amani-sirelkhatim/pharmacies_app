@@ -167,7 +167,13 @@ class _AddItemState extends State<AddItem> {
       },
     );
   }
-
+int? parsePrice(String value) {
+    try {
+      return int.parse(value);
+    } catch (e) {
+      return null;
+    }
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -343,6 +349,7 @@ class _AddItemState extends State<AddItem> {
         padding: const EdgeInsets.all(20),
         child: CustomButton(
             onTap: () {
+                int? price = parsePrice(_price.text);
               if (_formKey.currentState!.validate() &&
                   image1.isNotEmpty &&
                   image2.isNotEmpty) {
@@ -350,7 +357,7 @@ class _AddItemState extends State<AddItem> {
                     context,
                     Description(
                       name: _name.text,
-                      price: _price.text,
+                      price: price,
                       image1: image1,
                       image2: image2,
                       needed: needed,

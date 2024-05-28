@@ -1,13 +1,10 @@
 import 'package:custom_sliding_segmented_control/custom_sliding_segmented_control.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:pharmacies_app/core/functions/route.dart';
 import 'package:pharmacies_app/core/utils/colors.dart';
 import 'package:pharmacies_app/core/utils/styles.dart';
 import 'package:pharmacies_app/features/pharmacy/reqests/widgets/RequestHistory.dart';
 import 'package:pharmacies_app/features/pharmacy/reqests/widgets/pendingRequests.dart';
-import 'package:pharmacies_app/features/user/orders/cart.dart';
-
 import 'package:pharmacies_app/generated/l10n.dart';
 
 class Requests extends StatefulWidget {

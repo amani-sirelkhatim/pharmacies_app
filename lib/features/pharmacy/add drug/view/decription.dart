@@ -19,7 +19,7 @@ class Description extends StatefulWidget {
       required this.needed,
       required this.cat});
   final String name;
-  final String price;
+  final int? price;
   final String image1;
   final String image2;
   final bool needed;

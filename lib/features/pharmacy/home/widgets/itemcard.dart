@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:pharmacies_app/core/utils/colors.dart';
 import 'package:pharmacies_app/core/utils/styles.dart';
 
@@ -40,7 +40,7 @@ class _ItemCardState extends State<ItemCard> {
                         fit: BoxFit.fill,
                       ),
                     )
-                  : SizedBox(),
+                  :const SizedBox(),
             ),
             Expanded(
               flex: 1,

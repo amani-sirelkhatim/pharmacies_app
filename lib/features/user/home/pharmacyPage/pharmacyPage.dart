@@ -4,12 +4,14 @@ import 'package:pharmacies_app/core/functions/route.dart';
 import 'package:pharmacies_app/core/utils/colors.dart';
 import 'package:pharmacies_app/core/utils/styles.dart';
 import 'package:pharmacies_app/features/user/home/catigoryPage.dart';
+import 'package:pharmacies_app/features/user/home/pharmacyPage/pharmacyCat.dart';
 import 'package:pharmacies_app/features/user/home/widgets/category.dart';
 import 'package:pharmacies_app/generated/l10n.dart';
 
 class PharmecyPage extends StatefulWidget {
-  const PharmecyPage({super.key, required this.name});
+  const PharmecyPage({super.key, required this.name, required this.Pharmacyid});
   final String name;
+  final String Pharmacyid;
 
   @override
   State<PharmecyPage> createState() => _PharmecyPageState();
@@ -58,9 +60,11 @@ class _PharmecyPageState extends State<PharmecyPage> {
                       onTap: () {
                         push(
                             context,
-                            CatPage(
-                                Cat: 'Antibiaotics',
-                                title: S.of(context).Antibiotics));
+                            pharmacyCatPage(
+                              Cat: 'Antibiaotics',
+                              title: S.of(context).Antibiotics,
+                              pharmacyid: widget.Pharmacyid,
+                            ));
                       },
                       child: CatCard(
                           Cat: S.of(context).Antibiotics,
@@ -70,7 +74,8 @@ class _PharmecyPageState extends State<PharmecyPage> {
                       onTap: () {
                         push(
                             context,
-                            CatPage(
+                            pharmacyCatPage(
+                                pharmacyid: widget.Pharmacyid,
                                 Cat: 'Diabeties',
                                 title: S.of(context).diabetes));
                       },
@@ -82,9 +87,11 @@ class _PharmecyPageState extends State<PharmecyPage> {
                       onTap: () {
                         push(
                             context,
-                            CatPage(
-                                Cat: 'Otorhinolaryngology',
-                                title: S.of(context).Otorhinolaryngology));
+                            pharmacyCatPage(
+                              Cat: 'Otorhinolaryngology',
+                              title: S.of(context).Otorhinolaryngology,
+                              pharmacyid: widget.Pharmacyid,
+                            ));
                       },
                       child: CatCard(
                           Cat: S.of(context).Otorhinolaryngology,
@@ -94,9 +101,11 @@ class _PharmecyPageState extends State<PharmecyPage> {
                       onTap: () {
                         push(
                             context,
-                            CatPage(
-                                Cat: 'Tuberculosis',
-                                title: S.of(context).tuberculosis));
+                            pharmacyCatPage(
+                              Cat: 'Tuberculosis',
+                              title: S.of(context).tuberculosis,
+                              pharmacyid: widget.Pharmacyid,
+                            ));
                       },
                       child: CatCard(
                           Cat: S.of(context).tuberculosis,
@@ -106,9 +115,11 @@ class _PharmecyPageState extends State<PharmecyPage> {
                       onTap: () {
                         push(
                             context,
-                            CatPage(
-                                Cat: 'Blooddiseases',
-                                title: S.of(context).blooddiseases));
+                            pharmacyCatPage(
+                              Cat: 'Blooddiseases',
+                              title: S.of(context).blooddiseases,
+                              pharmacyid: widget.Pharmacyid,
+                            ));
                       },
                       child: CatCard(
                           Cat: S.of(context).blooddiseases,
@@ -118,9 +129,11 @@ class _PharmecyPageState extends State<PharmecyPage> {
                       onTap: () {
                         push(
                             context,
-                            CatPage(
-                                Cat: 'Galanddiseases',
-                                title: S.of(context).galanddiseases));
+                            pharmacyCatPage(
+                              Cat: 'Galanddiseases',
+                              title: S.of(context).galanddiseases,
+                              pharmacyid: widget.Pharmacyid,
+                            ));
                       },
                       child: CatCard(
                           Cat: S.of(context).galanddiseases,
@@ -130,9 +143,11 @@ class _PharmecyPageState extends State<PharmecyPage> {
                       onTap: () {
                         push(
                             context,
-                            CatPage(
-                                Cat: 'Immunediseases',
-                                title: S.of(context).immunediseases));
+                            pharmacyCatPage(
+                              Cat: 'Immunediseases',
+                              title: S.of(context).immunediseases,
+                              pharmacyid: widget.Pharmacyid,
+                            ));
                       },
                       child: CatCard(
                           Cat: S.of(context).immunediseases,
@@ -142,9 +157,11 @@ class _PharmecyPageState extends State<PharmecyPage> {
                       onTap: () {
                         push(
                             context,
-                            CatPage(
-                                Cat: 'kidneydiseases',
-                                title: S.of(context).kidneydiseases));
+                            pharmacyCatPage(
+                              Cat: 'kidneydiseases',
+                              title: S.of(context).kidneydiseases,
+                              pharmacyid: widget.Pharmacyid,
+                            ));
                       },
                       child: CatCard(
                           Cat: S.of(context).kidneydiseases,
@@ -154,9 +171,11 @@ class _PharmecyPageState extends State<PharmecyPage> {
                       onTap: () {
                         push(
                             context,
-                            CatPage(
-                                Cat: 'pressuredisease',
-                                title: S.of(context).pressuredisease));
+                            pharmacyCatPage(
+                              Cat: 'pressuredisease',
+                              title: S.of(context).pressuredisease,
+                              pharmacyid: widget.Pharmacyid,
+                            ));
                       },
                       child: CatCard(
                           Cat: S.of(context).pressuredisease,
@@ -166,9 +185,11 @@ class _PharmecyPageState extends State<PharmecyPage> {
                       onTap: () {
                         push(
                             context,
-                            CatPage(
-                                Cat: 'heartvasculardiseses',
-                                title: S.of(context).heartvasculardiseses));
+                            pharmacyCatPage(
+                              Cat: 'heartvasculardiseses',
+                              title: S.of(context).heartvasculardiseses,
+                              pharmacyid: widget.Pharmacyid,
+                            ));
                       },
                       child: CatCard(
                           Cat: S.of(context).heartvasculardiseses,

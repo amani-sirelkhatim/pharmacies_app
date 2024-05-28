@@ -9,9 +9,11 @@ import 'package:pharmacies_app/core/widgets/custom_button.dart';
 import 'package:pharmacies_app/core/widgets/dialog.dart';
 import 'package:pharmacies_app/features/Auth/Cupit/AuthCupit.dart';
 import 'package:pharmacies_app/features/Auth/Cupit/AuthStates.dart';
+import 'package:pharmacies_app/features/Auth/presentation/pharmacyRequest.dart';
 import 'package:pharmacies_app/features/Auth/presentation/signUp.dart';
 import 'package:pharmacies_app/features/pharmacy/pharmacyNav.dart';
 import 'package:pharmacies_app/features/user/PatientNav.dart';
+import 'package:pharmacies_app/generated/l10n.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key, required this.type});
@@ -56,7 +58,7 @@ class _LoginState extends State<Login> {
                 children: [
                   Gap(100),
                   Text(
-                    'Lets Get you In!!',
+                    S.of(context).getin,
                     style: getTitleStyle(
                         color: AppColors.black.withOpacity(.7),
                         fontWeight: FontWeight.bold,
@@ -64,7 +66,7 @@ class _LoginState extends State<Login> {
                   ),
                   Gap(10),
                   Text(
-                    'Welcome Back',
+                    S.of(context).welcome,
                     style: getBodyStyle(
                       color: AppColors.grey,
                       fontWeight: FontWeight.bold,
@@ -79,9 +81,9 @@ class _LoginState extends State<Login> {
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(25),
                       ),
-                      label: Text('Email'),
+                      label: Text(S.of(context).email),
                       labelStyle: getBodyStyle(),
-                      hintText: 'Enter Your Email',
+                      hintText: S.of(context).enteremail,
                       prefixIcon: Icon(
                         Icons.email_rounded,
                         color: AppColors.primary,
@@ -90,9 +92,9 @@ class _LoginState extends State<Login> {
                     textInputAction: TextInputAction.next,
                     validator: (value) {
                       if (value!.isEmpty) {
-                        return 'Please enter your email';
+                        return S.of(context).enteremail;
                       } else if (!emailValidate(value)) {
-                        return 'the email is wrong!!';
+                        return S.of(context).wrongemail;
                       } else {
                         return null;
                       }
@@ -108,7 +110,7 @@ class _LoginState extends State<Login> {
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(25),
                       ),
-                      label: Text('Password'),
+                      label: Text(S.of(context).password),
                       labelStyle: getBodyStyle(),
                       hintText: '********',
                       suffixIcon: IconButton(
@@ -128,24 +130,24 @@ class _LoginState extends State<Login> {
                     ),
                     controller: _passwordController,
                     validator: (value) {
-                      if (value!.isEmpty) return 'please enter your password';
+                      if (value!.isEmpty) return S.of(context).enterpassword;
                       return null;
                     },
                   ),
                   Gap(10),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      TextButton(
-                          onPressed: () {
-                            // push(context, forget());
-                          },
-                          child: Text(
-                            'Forgot Password?!',
-                            style: getSmallStyle(color: AppColors.primary),
-                          )),
-                    ],
-                  ),
+                  // Row(
+                  //   mainAxisAlignment: MainAxisAlignment.end,
+                  //   children: [
+                  //     TextButton(
+                  //         onPressed: () {
+                  //           // push(context, forget());
+                  //         },
+                  //         child: Text(
+                  //           'Forgot Password?!',
+                  //           style: getSmallStyle(color: AppColors.primary),
+                  //         )),
+                  //   ],
+                  // ),
                   Gap(20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -159,7 +161,7 @@ class _LoginState extends State<Login> {
                             }
                           },
                           width: 300,
-                          text: 'Login',
+                          text: S.of(context).login,
                           bgcolor: AppColors.primary.withOpacity(.7)),
                     ],
                   ),
@@ -174,15 +176,19 @@ class _LoginState extends State<Login> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'dont have an account?',
+              S.of(context).dont,
               style: getSmallStyle(color: AppColors.grey),
             ),
             TextButton(
                 onPressed: () {
-                  pushWithReplacment(context, SignUp(type: widget.type));
+                  if (widget.type == 0) {
+                    pushWithReplacment(context, SignUp(type: 0));
+                  } else {
+                    pushWithReplacment(context, Pharmacy());
+                  }
                 },
                 child: Text(
-                  'Regestir now',
+                  S.of(context).signup,
                   style: getSmallStyle(color: AppColors.primary),
                 ))
           ],

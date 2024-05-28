@@ -1,14 +1,15 @@
 import 'package:buttons_tabbar/buttons_tabbar.dart';
 import 'package:flutter/material.dart';
 import 'package:pharmacies_app/core/utils/colors.dart';
+import 'package:pharmacies_app/core/utils/styles.dart';
 import 'package:pharmacies_app/features/pharmacy/AdminDrugPage/widgets/DrugDeacription.dart';
 import 'package:pharmacies_app/features/pharmacy/AdminDrugPage/widgets/DrugHow.dart';
 import 'package:pharmacies_app/features/pharmacy/AdminDrugPage/widgets/DrugMain.dart';
 import 'package:pharmacies_app/generated/l10n.dart';
 
 class AdminTabBar extends StatefulWidget {
-  const AdminTabBar({super.key});
-
+  const AdminTabBar({super.key, required this.drugid});
+  final String drugid;
   @override
   State<AdminTabBar> createState() => _AdminTabBarState();
 }
@@ -17,7 +18,7 @@ class _AdminTabBarState extends State<AdminTabBar> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 3,
       child: Expanded(
         child: Padding(
           padding: const EdgeInsets.only(top: 20.0),
@@ -26,12 +27,11 @@ class _AdminTabBarState extends State<AdminTabBar> {
               ButtonsTabBar(
                 backgroundColor: AppColors.primary,
                 unselectedBackgroundColor: Colors.grey[300],
-                unselectedLabelStyle: TextStyle(color: Colors.black),
-                labelStyle:
-                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                unselectedLabelStyle: getBodyStyle(color: AppColors.black),
+                labelStyle: getBodyStyle(color: AppColors.white),
                 tabs: [
                   Tab(
-                    text: S.of(context).description,
+                    text: S.of(context).main,
                   ),
                   Tab(
                     text: S.of(context).description,
@@ -44,9 +44,15 @@ class _AdminTabBarState extends State<AdminTabBar> {
               Expanded(
                 child: TabBarView(
                   children: <Widget>[
-                    DrugMain(),
-                    DrugDescription(),
-                    DrugHow(),
+                    DrugMain(
+                      drugid: widget.drugid,
+                    ),
+                    DrugDescription(
+                      drugid: widget.drugid,
+                    ),
+                    DrugHow(
+                      drugid: widget.drugid,
+                    ),
                   ],
                 ),
               ),

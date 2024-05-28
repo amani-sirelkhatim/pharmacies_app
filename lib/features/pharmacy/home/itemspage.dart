@@ -7,7 +7,7 @@ import 'package:pharmacies_app/core/utils/styles.dart';
 import 'package:pharmacies_app/features/pharmacy/add%20drug/view/addItem.dart';
 import 'package:pharmacies_app/features/pharmacy/AdminDrugPage/AdminDrugPage.dart';
 import 'package:pharmacies_app/features/pharmacy/home/widgets/itemcard.dart';
-import 'package:pharmacies_app/features/user/home/drugPage/drugPage.dart';
+import 'package:pharmacies_app/features/user/home/drugPage/view/drugPage.dart';
 
 class ItemsGrid extends StatefulWidget {
   const ItemsGrid({super.key, required this.Cat, required this.title});
@@ -94,7 +94,7 @@ class _ItemsGridState extends State<ItemsGrid> {
                                   image: drug['frontimage'] ?? '',
                                   name: drug['name'] ?? '',
                                 ))
-                            : SizedBox();
+                            :const SizedBox();
                       },
                     ),
                   )

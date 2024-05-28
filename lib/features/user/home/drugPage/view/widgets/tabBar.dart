@@ -2,13 +2,13 @@ import 'package:buttons_tabbar/buttons_tabbar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pharmacies_app/core/utils/colors.dart';
-import 'package:pharmacies_app/features/user/home/drugPage/widgets/description.dart';
-import 'package:pharmacies_app/features/user/home/drugPage/widgets/use.dart';
+import 'package:pharmacies_app/features/user/home/drugPage/view/widgets/description.dart';
+import 'package:pharmacies_app/features/user/home/drugPage/view/widgets/use.dart';
 import 'package:pharmacies_app/generated/l10n.dart';
 
 class TabButtunBar extends StatefulWidget {
-  const TabButtunBar({super.key});
-
+  const TabButtunBar({super.key, required this.productid});
+  final String productid;
   @override
   State<TabButtunBar> createState() => _TabButtonBarState();
 }
@@ -41,8 +41,10 @@ class _TabButtonBarState extends State<TabButtunBar> {
               Expanded(
                 child: TabBarView(
                   children: <Widget>[
-                    Description(),
-                    Use(),
+                    Description(
+                      productid: widget.productid,
+                    ),
+                    Use(productid: widget.productid),
                   ],
                 ),
               ),

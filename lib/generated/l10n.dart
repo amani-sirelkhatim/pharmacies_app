@@ -50,10 +50,160 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Pharma`
+  /// `Join us as a `
+  String get join {
+    return Intl.message(
+      'Join us as a ',
+      name: 'join',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Patient`
+  String get patient {
+    return Intl.message(
+      'Patient',
+      name: 'patient',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pharmacy`
+  String get pharmacy {
+    return Intl.message(
+      'Pharmacy',
+      name: 'pharmacy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Lets Get You In`
+  String get getin {
+    return Intl.message(
+      'Lets Get You In',
+      name: 'getin',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome Back`
+  String get welcome {
+    return Intl.message(
+      'Welcome Back',
+      name: 'welcome',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login`
+  String get login {
+    return Intl.message(
+      'Login',
+      name: 'login',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Register Now`
+  String get regester {
+    return Intl.message(
+      'Register Now',
+      name: 'regester',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter Your Information Below`
+  String get info {
+    return Intl.message(
+      'Enter Your Information Below',
+      name: 'info',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign Up`
+  String get signup {
+    return Intl.message(
+      'Sign Up',
+      name: 'signup',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Already have an account?`
+  String get already {
+    return Intl.message(
+      'Already have an account?',
+      name: 'already',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You dont have an account `
+  String get dont {
+    return Intl.message(
+      'You dont have an account ',
+      name: 'dont',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `please enter your phone number`
+  String get enterphone {
+    return Intl.message(
+      'please enter your phone number',
+      name: 'enterphone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pharmacy Name`
+  String get pharname {
+    return Intl.message(
+      'Pharmacy Name',
+      name: 'pharname',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `please enter the pharmacy name`
+  String get enterpharname {
+    return Intl.message(
+      'please enter the pharmacy name',
+      name: 'enterpharname',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `email format is incorrect`
+  String get wrongemail {
+    return Intl.message(
+      'email format is incorrect',
+      name: 'wrongemail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `MediQuick`
   String get appname {
     return Intl.message(
-      'Pharma',
+      'MediQuick',
       name: 'appname',
       desc: '',
       args: [],
@@ -480,6 +630,16 @@ class S {
     );
   }
 
+  /// `please enter your password`
+  String get enterpassword {
+    return Intl.message(
+      'please enter your password',
+      name: 'enterpassword',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Update`
   String get update {
     return Intl.message(
@@ -665,6 +825,476 @@ class S {
     return Intl.message(
       'Phone Number',
       name: 'phone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Main Information`
+  String get main {
+    return Intl.message(
+      'Main Information',
+      name: 'main',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Yes`
+  String get yes {
+    return Intl.message(
+      'Yes',
+      name: 'yes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No`
+  String get no {
+    return Intl.message(
+      'No',
+      name: 'no',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delete`
+  String get delete {
+    return Intl.message(
+      'Delete',
+      name: 'delete',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `please uploaud your perscription image`
+  String get uploadperscription {
+    return Intl.message(
+      'please uploaud your perscription image',
+      name: 'uploadperscription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Order Status`
+  String get status {
+    return Intl.message(
+      'Order Status',
+      name: 'status',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please uploud the pharmacy health permission`
+  String get permission {
+    return Intl.message(
+      'Please uploud the pharmacy health permission',
+      name: 'permission',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Send Request`
+  String get request {
+    return Intl.message(
+      'Send Request',
+      name: 'request',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Already got the approval email??`
+  String get Aproval {
+    return Intl.message(
+      'Already got the approval email??',
+      name: 'Aproval',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Request To Join As A Pharmacy`
+  String get sendrequest {
+    return Intl.message(
+      'Request To Join As A Pharmacy',
+      name: 'sendrequest',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Set Your Address`
+  String get setaddress {
+    return Intl.message(
+      'Set Your Address',
+      name: 'setaddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Set Current Location`
+  String get currentlocation {
+    return Intl.message(
+      'Set Current Location',
+      name: 'currentlocation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `There are no products yet in this category`
+  String get noproducts {
+    return Intl.message(
+      'There are no products yet in this category',
+      name: 'noproducts',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `There are no saved products yet`
+  String get nosaved {
+    return Intl.message(
+      'There are no saved products yet',
+      name: 'nosaved',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `There are no confirmed orders yet`
+  String get noorders {
+    return Intl.message(
+      'There are no confirmed orders yet',
+      name: 'noorders',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your order has been placed Successfuly`
+  String get placeorder {
+    return Intl.message(
+      'Your order has been placed Successfuly',
+      name: 'placeorder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ok`
+  String get ok {
+    return Intl.message(
+      'Ok',
+      name: 'ok',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Product Added Successfuly to your cart`
+  String get addproduct {
+    return Intl.message(
+      'Product Added Successfuly to your cart',
+      name: 'addproduct',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `confirm your pending cart first`
+  String get pendingcart {
+    return Intl.message(
+      'confirm your pending cart first',
+      name: 'pendingcart',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `View Cart`
+  String get viewcart {
+    return Intl.message(
+      'View Cart',
+      name: 'viewcart',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Camera`
+  String get camera {
+    return Intl.message(
+      'Camera',
+      name: 'camera',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Gallery`
+  String get gallery {
+    return Intl.message(
+      'Gallery',
+      name: 'gallery',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select Photo Source`
+  String get photosource {
+    return Intl.message(
+      'Select Photo Source',
+      name: 'photosource',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delete Order`
+  String get deleteorder {
+    return Intl.message(
+      'Delete Order',
+      name: 'deleteorder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Are you sure you want to withdrow your order After it has been confirmed??!`
+  String get deletewarnning {
+    return Intl.message(
+      'Are you sure you want to withdrow your order After it has been confirmed??!',
+      name: 'deletewarnning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search Results`
+  String get searchresults {
+    return Intl.message(
+      'Search Results',
+      name: 'searchresults',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No search results found`
+  String get nosearch {
+    return Intl.message(
+      'No search results found',
+      name: 'nosearch',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Pending`
+  String get pendingorder {
+    return Intl.message(
+      'Pending',
+      name: 'pendingorder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delivery is in progress`
+  String get delivery {
+    return Intl.message(
+      'Delivery is in progress',
+      name: 'delivery',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delivered`
+  String get done {
+    return Intl.message(
+      'Delivered',
+      name: 'done',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Declined`
+  String get declined {
+    return Intl.message(
+      'Declined',
+      name: 'declined',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `please check your email \n to know why your order has been declined`
+  String get reasons {
+    return Intl.message(
+      'please check your email \n to know why your order has been declined',
+      name: 'reasons',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Are you sure you want to delete this product??!`
+  String get deleteproduct {
+    return Intl.message(
+      'Are you sure you want to delete this product??!',
+      name: 'deleteproduct',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Updated Successfuly`
+  String get updated {
+    return Intl.message(
+      'Updated Successfuly',
+      name: 'updated',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `order has been accepted Successfuly`
+  String get acceptorder {
+    return Intl.message(
+      'order has been accepted Successfuly',
+      name: 'acceptorder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `order has been declined Successfuly`
+  String get declineorder {
+    return Intl.message(
+      'order has been declined Successfuly',
+      name: 'declineorder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `why do you want to decline this order???`
+  String get declinereason {
+    return Intl.message(
+      'why do you want to decline this order???',
+      name: 'declinereason',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Difficulties in the delivery process`
+  String get deliverycomplications {
+    return Intl.message(
+      'Difficulties in the delivery process',
+      name: 'deliverycomplications',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The perscription is incorrect`
+  String get perscriptionisincorect {
+    return Intl.message(
+      'The perscription is incorrect',
+      name: 'perscriptionisincorect',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The product is unavailable`
+  String get drugnotavailable {
+    return Intl.message(
+      'The product is unavailable',
+      name: 'drugnotavailable',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `please set your address for delivery first!!!`
+  String get addresserror {
+    return Intl.message(
+      'please set your address for delivery first!!!',
+      name: 'addresserror',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `are you sure you want to remove this cart??`
+  String get deletecart {
+    return Intl.message(
+      'are you sure you want to remove this cart??',
+      name: 'deletecart',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `you removed all of the carts items please add new items or delete the cart it self!!`
+  String get noitems {
+    return Intl.message(
+      'you removed all of the carts items please add new items or delete the cart it self!!',
+      name: 'noitems',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Proceed to Signup`
+  String get continuesignup {
+    return Intl.message(
+      'Proceed to Signup',
+      name: 'continuesignup',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `check your email because you havent been accepted yet!!!`
+  String get emailcheck {
+    return Intl.message(
+      'check your email because you havent been accepted yet!!!',
+      name: 'emailcheck',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `you have already sent your request before... please wait for the responde email!!`
+  String get emailwait {
+    return Intl.message(
+      'you have already sent your request before... please wait for the responde email!!',
+      name: 'emailwait',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Full Page View`
+  String get fullpage {
+    return Intl.message(
+      'Full Page View',
+      name: 'fullpage',
       desc: '',
       args: [],
     );
