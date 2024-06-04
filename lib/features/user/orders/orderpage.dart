@@ -1,13 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-
 import 'package:gap/gap.dart';
 import 'package:pharmacies_app/core/functions/route.dart';
 import 'package:pharmacies_app/core/utils/colors.dart';
 import 'package:pharmacies_app/core/utils/styles.dart';
 import 'package:pharmacies_app/core/widgets/custom_button.dart';
 import 'package:pharmacies_app/features/user/PatientNav.dart';
-
 import 'package:pharmacies_app/generated/l10n.dart';
 
 class OrderPage extends StatefulWidget {
@@ -26,7 +24,7 @@ class OrderPage extends StatefulWidget {
 class _OrderPageState extends State<OrderPage> {
   Future<void> deleteDocument({required String orderid}) async {
     try {
-      // Perform a query to find the document based on fields
+      
       QuerySnapshot querySnapshot = await FirebaseFirestore.instance
           .collection('Orders')
           .where('orderid', isEqualTo: orderid)

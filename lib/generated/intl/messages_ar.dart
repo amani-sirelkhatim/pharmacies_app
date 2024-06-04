@@ -31,12 +31,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "PaymentSumary": MessageLookupByLibrary.simpleMessage("ملخص الدفع"),
         "Perscription":
             MessageLookupByLibrary.simpleMessage("هل يحتاج الى روشتة"),
+        "Requiredpapers":
+            MessageLookupByLibrary.simpleMessage("المستندات المطلوبة"),
         "Servicefee": MessageLookupByLibrary.simpleMessage("رسوم الخدمة"),
         "accept": MessageLookupByLibrary.simpleMessage("موافقة"),
         "acceptorder":
             MessageLookupByLibrary.simpleMessage("تم قبول الطلب بنجاح"),
         "adddrug": MessageLookupByLibrary.simpleMessage("دواء جديد"),
         "addmore": MessageLookupByLibrary.simpleMessage("اضف المزيد"),
+        "addpermission": MessageLookupByLibrary.simpleMessage("اضف الفايل"),
         "addproduct": MessageLookupByLibrary.simpleMessage(
             "تمت اضافة المنتج الى السلة بنجاح"),
         "address": MessageLookupByLibrary.simpleMessage("العنوان"),
@@ -142,7 +145,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("يجب تأكيد سلتك الحالية اولا"),
         "pendingorder": MessageLookupByLibrary.simpleMessage("قيد الانتظار"),
         "permission": MessageLookupByLibrary.simpleMessage(
-            "الرجاء ارفاق اذن الصيدلية الصحي"),
+            "الرجاء ارفاق ملف المستندات المطلوبة"),
         "perscriptionisincorect":
             MessageLookupByLibrary.simpleMessage("الروشتة خاطئة"),
         "personalinfo":

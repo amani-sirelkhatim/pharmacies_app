@@ -32,12 +32,16 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Payment Summary"),
         "Perscription":
             MessageLookupByLibrary.simpleMessage("Is a Perscription Needed"),
+        "Requiredpapers":
+            MessageLookupByLibrary.simpleMessage("Required Documents"),
         "Servicefee": MessageLookupByLibrary.simpleMessage("Service Fee"),
         "accept": MessageLookupByLibrary.simpleMessage("Accept"),
         "acceptorder": MessageLookupByLibrary.simpleMessage(
             "order has been accepted Successfuly"),
         "adddrug": MessageLookupByLibrary.simpleMessage("New Medicine "),
         "addmore": MessageLookupByLibrary.simpleMessage("Add More"),
+        "addpermission":
+            MessageLookupByLibrary.simpleMessage("import your pdf"),
         "addproduct": MessageLookupByLibrary.simpleMessage(
             "Product Added Successfuly to your cart"),
         "address": MessageLookupByLibrary.simpleMessage("Address"),
@@ -153,7 +157,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "confirm your pending cart first"),
         "pendingorder": MessageLookupByLibrary.simpleMessage("Pending"),
         "permission": MessageLookupByLibrary.simpleMessage(
-            "Please uploud the pharmacy health permission"),
+            "Please uploud a pdf with the required documents"),
         "perscriptionisincorect": MessageLookupByLibrary.simpleMessage(
             "The perscription is incorrect"),
         "personalinfo":

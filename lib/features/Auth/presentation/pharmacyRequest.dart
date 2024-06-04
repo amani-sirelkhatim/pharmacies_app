@@ -12,6 +12,7 @@ import 'package:pharmacies_app/core/utils/styles.dart';
 import 'package:pharmacies_app/core/widgets/custom_button.dart';
 import 'package:pharmacies_app/core/widgets/dialog.dart';
 import 'package:pharmacies_app/features/Auth/presentation/admin/pdf.dart';
+import 'package:pharmacies_app/features/Auth/presentation/requirepapers.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 import 'package:pharmacies_app/features/Auth/presentation/signUp.dart';
 import 'package:pharmacies_app/generated/l10n.dart';
@@ -193,13 +194,13 @@ class _PharmacyState extends State<Pharmacy> {
                 child: Column(
                   children: [
                     Text(
-                      'import your Health Permission pdf',
+                      S.of(context).addpermission,
                       style: getTitleStyle(color: AppColors.primary),
                     ),
                     const SizedBox(height: 20),
                     const Gap(20),
                     CustomButton(
-                      text: 'Add',
+                      text: S.of(context).save,
                       bgcolor: AppColors.primary,
                       onTap: () {
                         pickFile(context);
@@ -223,6 +224,7 @@ class _PharmacyState extends State<Pharmacy> {
   final TextEditingController _nameController = TextEditingController();
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -295,8 +297,18 @@ class _PharmacyState extends State<Pharmacy> {
               const Gap(20),
               Row(
                 children: [
-                  Text(S.of(context).permission + " : ",
-                      style: getSmallStyle()),
+                  Expanded(
+                    child: Text(S.of(context).permission + " : ",
+                        style: getSmallStyle()),
+                  ),
+                  Expanded(
+                    child: TextButton(
+                        onPressed: () {
+                          push(context, const RequiredPapers());
+                        },
+                        child: Text(S.of(context).Requiredpapers,
+                            style: getBodyStyle(color: AppColors.primary))),
+                  )
                 ],
               ),
               const Gap(10),
@@ -392,7 +404,8 @@ class _PharmacyState extends State<Pharmacy> {
                           .where('pharmacyemail',
                               isEqualTo: _emailController.text)
                           .get();
-                      if (querySnapshot != null) {
+                      var data = querySnapshot.docs;
+                      if (data.isNotEmpty) {
                         showErrorDialog(context, S.of(context).emailwait);
                       } else {
                         request(
@@ -460,7 +473,8 @@ class _PharmacyState extends State<Pharmacy> {
                                                   .where('status',
                                                       isEqualTo: 'accepted')
                                                   .get();
-                                          if (querySnapshot != null) {
+                                          var accept = querySnapshot.docs;
+                                          if (accept.isNotEmpty) {
                                             push(context, SignUp(type: 1));
                                           } else {
                                             showErrorDialog(context,

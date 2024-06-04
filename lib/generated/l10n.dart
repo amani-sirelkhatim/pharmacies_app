@@ -890,11 +890,31 @@ class S {
     );
   }
 
-  /// `Please uploud the pharmacy health permission`
+  /// `Please uploud a pdf with the required documents`
   String get permission {
     return Intl.message(
-      'Please uploud the pharmacy health permission',
+      'Please uploud a pdf with the required documents',
       name: 'permission',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Required Documents`
+  String get Requiredpapers {
+    return Intl.message(
+      'Required Documents',
+      name: 'Requiredpapers',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `import your pdf`
+  String get addpermission {
+    return Intl.message(
+      'import your pdf',
+      name: 'addpermission',
       desc: '',
       args: [],
     );

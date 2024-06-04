@@ -82,7 +82,9 @@
 "no":"No","delete":"Delete",
 "uploadperscription":"please uploaud your perscription image"
 ,"status":"Order Status",
-"permission":"Please uploud the pharmacy health permission",
+"permission":"Please uploud a pdf with the required documents",
+"Requiredpapers":"Required Documents",
+"addpermission":"import your pdf",
 "request":"Send Request",
 "Aproval":"Already got the approval email??"
 ,"sendrequest":"Request To Join As A Pharmacy",
